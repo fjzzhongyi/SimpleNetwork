@@ -23,7 +23,7 @@ void * loop(void * m)
 int main()
 {
 	pthread_t msg;
-	tcp.setup(11999);
+	tcp.setup(11111);
 	if( pthread_create(&msg, NULL, loop, (void *)0) == 0)
 	{
 		tcp.receive();

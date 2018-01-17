@@ -16,12 +16,12 @@ using namespace std;
 class TCPClient
 {
   private:
-    int sock;
     std::string address;
     int port;
     struct sockaddr_in server;
 
   public:
+    int sock;
     TCPClient();
     bool setup(string address, int port);
     bool Send(string data);
